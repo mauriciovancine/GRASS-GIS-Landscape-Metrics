@@ -1,0 +1,1592 @@
+COMMAND: v.in.ogr --overwrite input="mun_teste_wgs84.shp" output="mun_teste_wgs84" min_area=0.0001 snap=-1
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 06:59:12 2017
+-----------------------------------------------------
+74 input polygons
+Total area: 7.70325E+10 (74 areas)
+Overlapping area: 0 (0 areas)
+Area without category: 0 (0 areas)
+---------------------------------------------------------------------------------
+COMMAND: v.db.addcolumn "map=mun_teste_wgs84" "columns=dist double precision"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 08:21:33 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.addcolumn "map=mun_teste_wgs84" "columns=dist double precision"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 08:21:43 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.dropcolumn "map=mun_teste_wgs84@PERMANENT" "columns=dist"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 08:23:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.dropcolumn "map=mun_teste_wgs84" "column=proportion_euca"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 08:50:10 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.addcolumn "map=mun_teste_wgs84" "columns=proportion_euca integer"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 08:52:54 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca" "map=mun_teste_wgs84" "where=cat = 20" "value=0.185883678198"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 11:42:35 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.dropcolumn "map=mun_teste_wgs84" "col=proportion_euca"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 11:44:04 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.addcolumn "map=mun_teste_wgs84" "columns=proportion_euca_2001 double precision"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 11:56:46 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 1" "value=0.00269990793314"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:02:36 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 2" "value=1.86553674484"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:02:42 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 3" "value=1.73014825341"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:02:47 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 4" "value=7.07737587199"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:02:52 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 1" "value=0.00269990793314"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:34:57 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 2" "value=1.86553674484"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:35:02 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 3" "value=1.73014825341"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:35:07 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 4" "value=7.07737587199"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:35:12 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 5" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:35:17 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 6" "value=0.00865415067797"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:35:23 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 7" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:35:28 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 8" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:35:34 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 9" "value=0.00106073302714"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:35:40 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 10" "value=0.320744680851"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:35:46 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 11" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:35:51 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 12" "value=0.00128223210966"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:35:56 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 13" "value=0.00109345892869"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:36:02 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 14" "value=0.00517775893649"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:36:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 15" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:36:13 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 16" "value=0.0195237824074"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:36:19 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 17" "value=0.120587590441"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:36:24 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 18" "value=1.50691699605"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:36:29 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 19" "value=0.0524851416353"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:36:34 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 20" "value=0.185883678198"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:36:39 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 21" "value=0.125335126207"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:36:45 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 22" "value=0.0686481856562"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:36:51 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 23" "value=9.21485160871"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:36:57 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 24" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:37:04 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 25" "value=7.92179575642"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:37:11 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 26" "value=0.0488566355652"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:37:18 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 27" "value=0.201589417688"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:37:24 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 28" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:37:30 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 29" "value=0.583561263366"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:37:36 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 30" "value=0.0111415428956"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:37:41 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 31" "value=0.506301008565"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:37:48 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 32" "value=0.229152822017"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:37:53 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 33" "value=1.21961773772"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:37:58 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 34" "value=2.98993962169"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:38:06 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 35" "value=0.00127627531811"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:38:12 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 36" "value=0.368020356151"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:38:19 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 37" "value=0.019554401068"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:38:25 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 38" "value=3.19663396619"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:38:34 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 39" "value=6.20602435473"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:38:40 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 40" "value=3.82639869424"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:38:46 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 41" "value=9.97259429843"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:38:53 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 42" "value=4.60342053513"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:39:01 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 43" "value=4.36876548562"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:39:10 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 44" "value=22.4787241507"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:39:18 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 45" "value=2.07559746084"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:39:28 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 46" "value=3.65587055291"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:39:35 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 47" "value=0.0195475919924"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:39:42 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 48" "value=0.540323826478"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:39:49 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 49" "value=0.935557815066"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:39:56 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 50" "value=6.640960027"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:40:03 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 51" "value=1.86582608418"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:40:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 52" "value=2.00445772148"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:40:15 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 53" "value=4.76646735301"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:40:22 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 54" "value=0.000210508145613"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:40:29 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 55" "value=0.033947187461"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:40:34 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 56" "value=1.25567867328"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:40:40 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 57" "value=0.6245622026"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:40:49 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 58" "value=0.0136158998573"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:40:56 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 59" "value=0.764286615341"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:41:03 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 60" "value=0.201814364165"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:41:11 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 61" "value=0.130827156245"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:41:16 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 62" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:41:24 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 63" "value=0.245490059487"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:41:31 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 64" "value=2.06136307823"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:41:36 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 65" "value=1.97668769945"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:41:44 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 66" "value=0.0301102224887"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:41:50 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 67" "value=0.174459099968"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:41:59 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 68" "value=0.304334318398"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:42:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 69" "value=0.102746103365"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:42:14 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 70" "value=1.47521495821"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:42:21 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 71" "value=0.0795767599748"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:42:27 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 72" "value=1.27094030295"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:42:35 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 73" "value=0.0032926048096"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:42:43 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 74" "value=1.68217524758"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:42:50 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.dropcolumn "map=mun_teste_wgs84" "col=proportion_euca"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:53:52 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.dropcolumn "map=mun_teste_wgs84" "col=proportion_euca_2001"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:54:10 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.addcolumn "map=mun_teste_wgs84" "columns=proportion_euca_2001 double precision"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:54:24 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 1" "value=0.00269997041604"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:54:29 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 1" "value=0.00269997041604"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:56:43 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 2" "value=1.8673232451"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:56:52 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 3" "value=1.72959836606"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:57:01 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 4" "value=7.0810714356"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:57:10 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 5" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:57:18 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 6" "value=0.00865440564488"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:57:26 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 7" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:57:35 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 8" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:57:43 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 9" "value=0.00106080054071"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:57:51 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 10" "value=0.320792458451"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:58:00 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 11" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:58:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 12" "value=0.00128238557915"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:58:16 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 13" "value=0.00109352088873"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:58:24 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 14" "value=0.0051779516347"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:58:32 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 15" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:58:39 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 16" "value=0.0195247353992"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:58:47 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 17" "value=0.120870321826"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:58:55 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 18" "value=1.50674302406"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:59:03 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 19" "value=0.0518910407434"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:59:11 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 20" "value=0.185891919942"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:59:19 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 21" "value=0.127819392858"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:59:27 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 22" "value=0.0679333841118"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:59:35 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 23" "value=9.22092954683"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:59:42 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 24" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:59:50 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 25" "value=7.92284432469"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 12:59:58 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 26" "value=0.0488522695454"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:00:06 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 27" "value=0.202881105848"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:00:13 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 28" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:00:21 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 29" "value=0.585690435434"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:00:29 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 30" "value=0.0116312383228"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:00:36 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 31" "value=0.505623080365"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:00:44 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 32" "value=0.229170008729"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:00:52 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 33" "value=1.21991010488"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:00:59 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 34" "value=2.99216272285"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:01:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 35" "value=0.00042547035748"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:01:15 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 36" "value=0.368039205484"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:01:23 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 37" "value=0.0195570450029"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:01:30 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 38" "value=3.19506099532"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:01:38 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 39" "value=6.20707547465"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:01:46 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 40" "value=3.82777053728"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:01:54 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 41" "value=9.97485355236"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:02:01 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 42" "value=4.60397122391"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:02:09 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 43" "value=4.36674727877"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:02:18 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 44" "value=22.4781852537"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:02:26 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 45" "value=2.07763066385"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:02:34 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 46" "value=3.655518695"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:02:42 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 47" "value=0.0192749864573"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:02:49 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 48" "value=0.542370761636"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:02:57 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 49" "value=0.929571193922"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:03:05 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 50" "value=6.64280884802"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:03:12 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 51" "value=1.86545047323"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:03:20 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 52" "value=2.00047602981"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:03:28 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 53" "value=4.76805728087"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:03:36 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 54" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:03:44 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 55" "value=0.0339487634816"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:03:52 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 56" "value=1.25621110254"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:04:00 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 57" "value=0.624221994267"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:04:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 58" "value=0.0136157054967"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:04:16 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 59" "value=0.764283145202"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:04:24 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 60" "value=0.201819688363"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:04:32 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 61" "value=0.131333443708"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:04:40 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 62" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:04:48 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 63" "value=0.245391780978"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:04:56 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 64" "value=2.06166119886"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:05:04 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 65" "value=1.9769787906"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:05:12 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 66" "value=0.02983919535"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:05:19 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 67" "value=0.174468162944"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:05:27 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 68" "value=0.303857425129"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:05:35 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 69" "value=0.102750942729"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:05:43 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 70" "value=1.47513702605"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:05:52 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 71" "value=0.0797743874559"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:06:00 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 72" "value=1.27379800665"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:06:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 73" "value=0.0032928265773"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:06:15 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=proportion_euca_2001" "map=mun_teste_wgs84" "where=cat = 74" "value=1.6835614449"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:06:23 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.dropcolumn "map=mun_teste_wgs84" "col=proportion_euca_2001"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:21:29 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.addcolumn "map=mun_teste_wgs84" "columns=prp_euca_2001 double precision"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:22:25 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 1" "value=0.00269997041604"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:22:44 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 2" "value=1.8673232451"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:22:53 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 3" "value=1.72959836606"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:23:01 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 4" "value=7.0810714356"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:23:09 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 5" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:23:17 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 6" "value=0.00865440564488"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:23:24 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 7" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:23:32 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 8" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:23:40 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 9" "value=0.00106080054071"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:23:48 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 10" "value=0.320792458451"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:23:56 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 11" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:24:04 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 12" "value=0.00128238557915"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:24:11 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 13" "value=0.00109352088873"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:24:19 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 14" "value=0.0051779516347"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:24:26 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 15" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:24:34 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 16" "value=0.0195247353992"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:24:42 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 17" "value=0.120870321826"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:24:50 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 18" "value=1.50674302406"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:24:58 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 19" "value=0.0518910407434"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:25:06 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 20" "value=0.185891919942"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:25:13 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 21" "value=0.127819392858"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:25:21 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 22" "value=0.0679333841118"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:25:29 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 23" "value=9.22092954683"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:25:37 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 24" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:25:45 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 25" "value=7.92284432469"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:25:53 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 26" "value=0.0488522695454"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:26:01 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 27" "value=0.202881105848"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:26:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 28" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:26:16 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 29" "value=0.585690435434"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:26:24 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 30" "value=0.0116312383228"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:26:33 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 31" "value=0.505623080365"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:26:41 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 32" "value=0.229170008729"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:26:50 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 33" "value=1.21991010488"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:26:59 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 34" "value=2.99216272285"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:27:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 35" "value=0.00042547035748"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:27:16 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 36" "value=0.368039205484"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:27:25 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 37" "value=0.0195570450029"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:27:33 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 38" "value=3.19506099532"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:27:41 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 39" "value=6.20707547465"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:27:49 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 40" "value=3.82777053728"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:27:57 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 41" "value=9.97485355236"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:28:06 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 42" "value=4.60397122391"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:28:14 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 43" "value=4.36674727877"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:28:23 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 44" "value=22.4781852537"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:28:31 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 45" "value=2.07763066385"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:28:39 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 46" "value=3.655518695"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:28:47 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 47" "value=0.0192749864573"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:28:55 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 48" "value=0.542370761636"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:29:02 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 49" "value=0.929571193922"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:29:10 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 50" "value=6.64280884802"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:29:19 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 51" "value=1.86545047323"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:29:29 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 52" "value=2.00047602981"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:29:37 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 53" "value=4.76805728087"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:29:47 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 54" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:29:56 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 55" "value=0.0339487634816"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:30:04 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 56" "value=1.25621110254"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:30:14 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 57" "value=0.624221994267"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:30:22 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 58" "value=0.0136157054967"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:30:30 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 59" "value=0.764283145202"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:30:39 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 60" "value=0.201819688363"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:30:47 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 61" "value=0.131333443708"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:30:55 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 62" "value=0.0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:31:03 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 63" "value=0.245391780978"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:31:12 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 64" "value=2.06166119886"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:31:19 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 65" "value=1.9769787906"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:31:27 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 66" "value=0.02983919535"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:31:35 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 67" "value=0.174468162944"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:31:43 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 68" "value=0.303857425129"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:31:51 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 69" "value=0.102750942729"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:31:59 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 70" "value=1.47513702605"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:32:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 71" "value=0.0797743874559"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:32:17 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 72" "value=1.27379800665"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:32:26 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 73" "value=0.0032928265773"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:32:35 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=prp_euca_2001" "map=mun_teste_wgs84" "where=cat = 74" "value=1.6835614449"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:32:44 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.addcolumn "column=p_eu_2001 DOUBLE PRECISION" "map=mun_teste_wgs84" "layer=1"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:44:33 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.dropcolumn "column=prp_euca_2001" "map=mun_teste_wgs84" "layer=1"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:44:33 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.renamecolumn "column=prp_euca_2001,p_eu_2001" "map=mun_teste_wgs84"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:44:33 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.addcolumn "map=mun_teste_wgs84" "columns=np_2001 integer"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 13:53:27 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 1" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:00:57 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 2" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:01:06 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 3" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:01:19 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 4" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:01:31 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 5" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:01:42 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 6" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:01:55 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 7" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:02:09 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 8" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:02:21 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 9" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:02:34 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 10" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:02:44 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 11" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:02:55 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 12" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:03:06 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 13" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:03:19 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 14" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:03:33 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 15" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:03:47 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 16" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:04:01 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 17" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:04:14 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 18" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:04:28 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 19" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:04:39 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 20" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:04:52 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 21" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:05:06 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 22" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:05:17 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 23" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:05:29 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 24" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:05:44 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 25" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:05:57 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 26" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:06:11 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 27" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:06:22 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 28" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:06:36 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 29" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:06:49 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 30" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:07:03 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 31" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:07:13 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 32" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:07:25 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 33" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:07:38 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 34" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:07:51 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 35" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:08:03 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 36" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:08:14 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 37" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:08:28 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 38" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:08:40 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 39" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:08:54 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 40" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:09:06 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 41" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:09:17 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 42" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:09:30 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 43" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:09:44 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 44" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:09:56 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 45" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:10:06 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 46" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:10:18 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 47" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:10:31 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 48" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:10:44 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 49" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:10:56 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 50" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:11:10 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 51" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:11:24 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 52" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:11:35 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 53" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:11:48 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 54" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:12:02 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 55" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:12:16 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 56" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:12:28 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 57" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:12:40 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 58" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:12:52 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 59" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:13:05 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 60" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:13:17 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 61" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:13:28 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 62" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:13:41 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 63" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:13:52 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 64" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:14:06 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 65" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:14:18 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 66" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:14:30 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 67" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:14:41 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 68" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:14:53 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 69" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:15:05 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 70" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:15:17 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 71" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:15:29 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 72" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:15:39 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 73" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:15:51 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 74" "value=19930"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:16:04 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 1" "value=3"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:33:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 2" "value=38"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:33:14 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 1" "value=3"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:33:52 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 2" "value=38"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:33:58 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 3" "value=91"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:34:04 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 4" "value=265"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:34:10 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 5" "value=0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:34:17 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 6" "value=4"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:34:26 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 7" "value=0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:34:33 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 8" "value=0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:34:40 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 9" "value=1"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:34:48 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 10" "value=6"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:34:56 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 11" "value=0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:35:04 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 12" "value=1"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:35:13 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 13" "value=3"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:35:22 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 14" "value=4"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:35:30 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 15" "value=0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:35:37 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 16" "value=6"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:35:42 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 17" "value=27"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:35:49 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 18" "value=11"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:35:55 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 19" "value=16"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:36:02 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 20" "value=26"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:36:10 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 21" "value=10"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:36:17 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 22" "value=35"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:36:25 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 23" "value=439"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:36:34 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 24" "value=0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:36:40 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 25" "value=866"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:36:49 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 26" "value=5"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:36:57 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 27" "value=15"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:37:05 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 28" "value=0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:37:13 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 29" "value=113"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:37:20 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 30" "value=6"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:37:26 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 31" "value=16"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:37:31 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 32" "value=39"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:37:37 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 33" "value=54"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:37:43 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 34" "value=526"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:37:52 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 35" "value=1"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:37:59 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 36" "value=51"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:38:07 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 37" "value=3"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:38:15 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 38" "value=41"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:38:23 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 39" "value=675"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:38:30 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 40" "value=239"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:38:36 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 41" "value=468"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:38:42 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 42" "value=804"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:38:50 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 43" "value=1422"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:38:57 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 44" "value=2257"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:39:06 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 45" "value=107"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:39:14 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 46" "value=862"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:39:22 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 47" "value=9"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:39:30 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 48" "value=28"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:39:37 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 49" "value=97"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:39:45 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 50" "value=266"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:39:53 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 51" "value=325"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:40:01 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 52" "value=354"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:40:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 53" "value=750"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:40:14 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 54" "value=0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:40:22 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 55" "value=9"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:40:28 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 56" "value=278"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:40:36 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 57" "value=239"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:40:44 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 58" "value=5"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:40:50 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 59" "value=620"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:40:58 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 60" "value=227"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:41:06 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 61" "value=101"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:41:14 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 62" "value=0"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:41:21 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 63" "value=125"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:41:28 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 64" "value=166"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:41:36 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 65" "value=252"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:41:41 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 66" "value=6"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:41:47 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 67" "value=198"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:41:55 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 68" "value=311"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:42:03 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 69" "value=100"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:42:09 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 70" "value=786"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:42:18 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 71" "value=43"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:42:24 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 72" "value=79"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:42:33 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 73" "value=3"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:42:41 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "column=np_2001" "map=mun_teste_wgs84" "where=cat = 74" "value=272"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 14:42:49 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.dropcolumn "map=mun_teste_wgs84@PERMANENT" "columns=p_eu_2001"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics_mod/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 15:51:08 2017
+---------------------------------------------------------------------------------
+COMMAND: v.db.dropcolumn "map=mun_teste_wgs84@PERMANENT" "columns=np_2001"
+GISDBASE: /home/leecb/Github/GRASS-GIS-Landscape-Metrics_mod/grassdb_test_zonal
+LOCATION: test_zonal_eucaliptus MAPSET: PERMANENT USER: leecb DATE: Mon Oct 16 15:51:15 2017

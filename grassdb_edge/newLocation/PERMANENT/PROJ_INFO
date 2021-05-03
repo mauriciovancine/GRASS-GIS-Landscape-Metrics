@@ -1,0 +1,7 @@
+name: WGS_1984_UTM_Zone_23S
+datum: wgs84
+ellps: wgs84
+proj: utm
+zone: 23
+south: defined
+no_defs: defined

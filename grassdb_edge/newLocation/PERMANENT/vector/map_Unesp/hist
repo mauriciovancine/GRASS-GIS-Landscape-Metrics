@@ -1,0 +1,8 @@
+COMMAND: v.in.ogr input="map_Unesp.shp" output="map_Unesp" min_area=0.0001 type="" snap=-1
+GISDBASE: E:\github_mauriciovancine\GRASS-GIS-Landscape-Metrics\grassdb_edge
+LOCATION: newLocation MAPSET: PERMANENT USER: Compaq 6910p DATE: Fri Jan 05 11:17:10 2018
+-----------------------------------------------------
+156 input polygons
+Total area: 4.38704E+006 (485 areas)
+Overlapping area: 0.00360054 (97 areas)
+Area without category: 0.00286361 (89 areas)

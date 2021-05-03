@@ -1,0 +1,5 @@
+name: GCS_WGS_1984
+datum: wgs84
+ellps: wgs84
+proj: ll
+no_defs: defined
